@@ -1,11 +1,294 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Dynamic-K</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      background: white;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    h1 {
+      font-size: 48px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 22px;
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto 24px;
+    }
+
+    .authors {
+      font-size: 18px;
+      margin: 18px 0 8px;
+    }
+
+    .authors a {
+      color: #3273dc;
+      text-decoration: none;
+    }
+
+    .venue {
+      font-size: 18px;
+      font-weight: bold;
+      color: #444;
+      margin-bottom: 28px;
+    }
+
+    .buttons {
+      margin-top: 24px;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 6px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: #222;
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .button:hover {
+      background: #555;
+    }
+
+    .teaser {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .teaser-box {
+      height: 360px;
+      border: 2px dashed #bbb;
+      border-radius: 16px;
+      background: #fafafa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      font-size: 20px;
+    }
+
+    section {
+      margin-top: 56px;
+    }
+
+    h2 {
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .image-placeholder {
+      height: 220px;
+      border: 2px dashed #bbb;
+      border-radius: 12px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      margin-bottom: 16px;
+    }
+
+    pre {
+      background: #f1f1f1;
+      padding: 20px;
+      border-radius: 10px;
+      overflow-x: auto;
+      font-size: 15px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 70px;
+      padding: 30px;
+      color: #777;
+      font-size: 14px;
+      border-top: 1px solid #ddd;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 34px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+
+      .teaser-box {
+        height: 240px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Dynamic-K</h1>
-  <p>This is the project page for our AAAI paper.</p>
+  <div class="container">
+
+    <section class="hero">
+      <h1>Dynamic-K</h1>
+
+      <p class="subtitle">
+        A short description of your AAAI paper will be placed here.
+      </p>
+
+      <p class="authors">
+        <a href="#">Author One</a>,
+        <a href="#">Author Two</a>,
+        <a href="#">Author Three</a>
+      </p>
+
+      <p class="venue">
+        AAAI 2026
+      </p>
+
+      <div class="buttons">
+        <a class="button" href="#">Paper</a>
+        <a class="button" href="#">Code</a>
+        <a class="button" href="#">Dataset</a>
+        <a class="button" href="#">Video</a>
+        <a class="button" href="#">Poster</a>
+      </div>
+    </section>
+
+    <section class="teaser">
+      <div class="teaser-box">
+        Main teaser figure / overview image goes here
+      </div>
+      <p>
+        One-sentence caption explaining the main idea of Dynamic-K.
+      </p>
+    </section>
+
+    <section>
+      <h2>Abstract</h2>
+      <p>
+        This is a placeholder for the abstract. Later, you can paste your paper
+        abstract here. Keep this section concise and easy to read.
+      </p>
+    </section>
+
+    <section>
+      <h2>Method Overview</h2>
+
+      <div class="grid">
+        <div class="card">
+          <div class="image-placeholder">Method Figure 1</div>
+          <h3>Key Idea</h3>
+          <p>
+            Briefly describe the first key idea of your method.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="image-placeholder">Method Figure 2</div>
+          <h3>Model Design</h3>
+          <p>
+            Briefly describe the architecture or main algorithm.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="image-placeholder">Method Figure 3</div>
+          <h3>Inference</h3>
+          <p>
+            Briefly describe how your method works during inference.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Results</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Quantitative Results</h3>
+          <p>
+            Add benchmark numbers, comparison tables, or performance summaries here.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Qualitative Results</h3>
+          <p>
+            Add visual results, demos, or examples here.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Video</h2>
+      <div class="teaser-box">
+        Demo video will be embedded here later
+      </div>
+    </section>
+
+    <section>
+      <h2>Citation</h2>
+      <pre><code>@inproceedings{dynamic_k_2026,
+  title     = {Dynamic-K},
+  author    = {Author One and Author Two and Author Three},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  year      = {2026}
+}</code></pre>
+    </section>
+
+    <footer>
+      This website is a project page for Dynamic-K.
+    </footer>
+
+  </div>
 </body>
 </html>
